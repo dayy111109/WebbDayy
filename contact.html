@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>Dayana Personal Web</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+
+    <body style="background-color: seashell;">
+        <nav>
+            <a href="index.html">Home</a> |
+            <a href="contact.html">Contact Me</a> |
+            <a href="about.html">About Me</a> |
+            <a href="cv-me.html">My CV</a> 
+        </nav>
+
+        <hr>
+
+        <form onsubmit="kirimWA(); return false;">
+            <fieldset>
+            <legend>Contact</legend>
+
+            <p>
+                <label>Name :</label><br>
+                <input type="text" id="nama" placeholder="your name..."
+                   style="width: 300px; height: 40px;" required>
+            </p>
+
+            <p>
+            <label>Email :</label><br>
+            <input type="email" id="email" placeholder="your email..."
+                   style="width: 300px; height: 40px;" required>
+            </p>
+
+            <p>
+            <label>Message :</label><br>
+            <textarea id="pesan" placeholder="your message..."
+                      style="width: 400px; height: 150px;" required></textarea>
+            </p>
+
+            <p>
+            <button type="submit"
+                    style="padding: 10px 25px; cursor: pointer;">
+                Send
+            </button>
+            </p>
+            </fieldset>
+        </form>
+
+
+        <script>
+        function kirimWA() {
+            var nama = document.getElementById("nama").value;
+            var email = document.getElementById("email").value;
+            var pesan = document.getElementById("pesan").value;
+
+            var nomorWA = "6288291711713"; // GANTI NOMOR WA KAMU
+
+            var text = "Halo Dayana,%0A" +
+               "Nama: " + nama + "%0A" +
+               "Email: " + email + "%0A" +
+               "Pesan: " + pesan;
+
+            var url = "https://wa.me/" + nomorWA + "?text=" + text;
+                window.open(url, "_blank");
+            }
+        </script>
+        
+    </body>
+</html>

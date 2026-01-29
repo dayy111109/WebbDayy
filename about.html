@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>Dayana Personal Web</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <style>
+            /* 1. Reset supaya padding tidak menambah lebar elemen (penyebab fieldset mengecil/berantakan) */
+            * {
+                box-sizing: border-box;
+            }
+
+            /* 2. Supaya fieldset selalu penuh di HP tapi tidak terlalu melar di Laptop */
+            fieldset {
+                width: 100%;
+                max-width: 1000px; /* Batas lebar di laptop */
+                margin: 10px auto !important; /* Supaya ke tengah */
+                display: block;
+            }
+
+            /* 3. Supaya gambar & video tidak 'pecah' atau keluar dari kotak di HP */
+            img, video {
+                max-width: 100%;
+                height: auto;
+            }
+
+            /* supaya float rapi */
+            header::after {
+                content: "";
+                display: block;
+                clear: both;
+            }
+
+            /* khusus HP */
+            @media (max-width: 768px) {
+                header img {
+                    float: none !important;
+                    display: block;
+                    margin: 0 auto;
+                }
+                /* Di HP, hilangkan margin samping supaya kotak benar-benar lebar */
+                body {
+                    padding: 5px;
+                }
+            }
+        </style>
+        
+    </head>
+
+    <body style="background-color: lightpink;">
+        <nav>
+            <a href="index.html">Home</a> |
+            <a href="contact.html">Contact Me</a> |
+            <a href="about.html">About Me</a> |
+            <a href="cv-me.html">My CV</a> 
+        </nav>
+
+        <hr>
+
+        <header>
+
+            <fieldset style="background-color: seashell; margin: auto; box-sizing: border-box; width: 100%; margin: 10px 0; padding: 15px;">
+                <p style="text-align: center;"><b>Halo Teman-Teman<span>👋</span></b></p>
+                <p style="text-indent: 45px;">Tak kenal maka emang ga akan kenal. Jadi yang belum tahu, namaku Dayana Mayra Balqis. Kalo mau panggil saja aku Dayana. Tapi kalo tidak mau, panggil aku Balqis, Aqis. Kalo gamau lagi ? panggil aja aku cantik<span>😝</span>. Oh iya arti dari namaku itu
+                    “Seorang perempuan yang bijaksana dan adil, memiliki kecantikan yang bercahaya, serta kecerdasan dan kemuliaan seperti Ratu Balqis”. Oh iya umurku sudah 16 tahun dan setahun lagi umurku 17 tahun OMAIGATT!<span>😱</span>. Aduh jujur takut dewasa..<span>😞</span>
+                    Ngebayangin punya KTP aja udah serem ngeri-ngeri sedap. Btw janlup atau kalo bisa catet ye, tanggal lahir gw 01 November 2009. Jadi setiap tanggal 1 Nov janlup kasih aku kado<span>😏</span>
+                </p>
+
+                <p>
+                    Oh iya ini fotoku saat kecil hingga sekarang :
+                </p>
+                
+                <hr>
+
+                <div style="display: flex; gap: 15px; flex-wrap: wrap;">
+
+                    <img src="img/2tahun.jpeg" width="100" height="100" style="border-radius: 10%; object-fit: cover; border: 3px solid lightpink; padding: 5px;" />
+                    <img src="img/7-10tahun.jpeg" width="100" height="100" style="border-radius: 10%; object-fit: cover; border: 3px solid lightpink; padding: 5px;" />
+                    <img src="img/16tahun.jpg" width="100" height="100" style="border-radius: 10%; object-fit: cover; border: 3px solid lightpink; padding: 5px;" />
+                </div>
+            </fieldset>
+        </header>
+
+        <hr>
+
+        <fieldset style="background-color: seashell;">
+            <h3>
+                Selanjutnya kalian mau tahu tidak pengalaman brharga yang pernah ku dapat di SMK TELKOM JAKARTA ?
+            </h3>
+
+            <ol>
+                <li>Ikut Organisasi
+                    <ul>
+                        <br>
+                        <li>Jadi Panitia Acara Sekolah <br>
+                            <img src="img/panitiacompetanceday.jpeg" width="300" height="400" style="border-radius: 5%" />
+                        </li>
+                        <br>
+
+                        <li>Ikut Pameran di Univ Terbuka<br>
+                            <video autoplay loop muted playsinline width="180" height="300" style="border-radius: 10%;">
+                                <source src="video/Pameran.mp4"/>
+                            </video>
+                        </li>
+                        <br>
+                            
+                        <li>Hasil belajar rigging yang ku buat<br>
+                            <video autoplay loop muted playsinline width="300" height="200" style="border-radius: 10%;">
+                                <source src="video/riggig.mp4"/>
+                            </video>
+                        </li>
+                    </ul>
+                </li>
+                
+                <hr>
+
+                <li>Ikut 4 Eskul
+                    <ul>
+                        <br>
+                        <li>UI/UX<br>
+                                <img src="img/karyafigma.png" width="300" height="200" style="border-radius: 5%" />
+                                <figcaption style="font-size: small;">Karya My Figma</figcaption>
+                        </li>
+                        <br>
+
+                        <li>Karate<br>
+                                <img src="img/Karate.jpeg" width="300" height="200" style="border-radius: 5%" />
+                        </li>
+                        <br>
+                            
+                        <li>Fotografi<br>
+                                <img src="img/FogaTim.jpeg" width="300" height="200" style="border-radius: 5%" />
+                                <figcaption style="font-size: small;">Tim Fotografi</figcaption>
+                        </li>
+                        <br>
+                                 
+                        <li>Rohis<br>
+                            <ul>
+                                <li>Danus<br>
+                                    <video autoplay loop muted playsinline width="200" height="300" style="border-radius: 15%;">
+                                        <source src="video/Danus.mp4"/>
+                                    </video>
+                                </li>
+
+                                <br>
+
+                                <li>Panitia Acara Maulid<br>
+                                    <img src="img/PanitiaMaulid.jpeg" width="300" height="200" style="border-radius: 5%" />
+                                </li>
+
+                                <br>
+
+                                <li>Menang Lomba Online<br>
+                                    <img src="img/MenangLomba.jpeg" width="300" height="200" style="border-radius: 5%" />
+                                </li>
+                            </ul>
+                        </li>
+                        
+                    </ul>
+                </li>
+
+                <hr>
+
+                <li>Sertifikat lomba online dan acara Sekolah
+                    <ul>
+                        <br>
+                        <li>Sertifikat 1<br>
+                            <img src="img/sertifikat1.png" width="400" height="300" style="border-radius: 5%" />
+                        </li>
+                        <br>
+
+                        <li>Sertifikat 2<br>
+                            <img src="img/sertifikat2.png" width="400" height="300" style="border-radius: 5%" />
+                        </li>
+                        <br>
+                            
+                        <li>Sertifikat 3<br>
+                            <img src="img/sertifikat3.jpeg" width="400" height="300" style="border-radius: 5%" />
+                        </li>
+                    </ul>
+                </li>
+
+                <hr>
+
+                <li>Hobi ?
+                    <ul>
+                        <br>
+                        <li>Desain<br>
+                            <img src="img/Desain.png" width="400" height="300" style="border-radius: 5%" />
+                        </li>
+                        <br>
+
+                        <li>Menyanyi<br>
+                            <video autoplay loop muted playsinline width="180" height="300" style="border-radius: 10%;">
+                                <source src="video/nyanyi.mp4"/>
+                            </video>
+                        </li>
+                        <br>
+                            
+                        <li>Menulis<br>
+                            <img src="img/nulis.jpeg" width="400" height="300" style="border-radius: 5%" />
+                        </li>
+                    </ul>
+                </li>
+
+            </ol>
+
+                        <p> Jadi teman-teman, kalian jangan takut untuk keluar dari zona nyaman kalian. 
+                        Dan juga...saingan kalian kan bukan sekitar kalian saja, tapi satu dunia<span>😉</span>.
+                        Kalo stress ? Bawa enjoy aja dan ingat kita itu kuat dan mau meningkatkan kualitas diri kan ? Ayo erjuang bersama<span>😆</span>.
+                        </p>
+                
+        </fieldset>
+
+    </body>
+</html>
